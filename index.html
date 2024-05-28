@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Rust is the Future</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">🦀 Why Rust is the Future 🦀</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Rust is a systems programming language that is fast, memory-efficient, and guarantees thread safety. It’s the future of safe, performant systems programming.</p>
+            <img src="rusty1.png" alt="Ferris the Crab" id="ferris">
+        </section>
+        <section id="reasons">
+            <h2>Key Reasons</h2>
+            <ul>
+                <li>🛡️ <strong>Memory Safety Without Garbage Collection:</strong> Rust ensures memory safety by using a system of ownership with rules that the compiler checks at compile time. This eliminates common bugs such as null pointer dereferencing and buffer overflows, which are prevalent in languages like C and C++.</li>
+                <li>⚙️ <strong>Concurrency Without Data Races:</strong> Rust's ownership system also helps in writing concurrent programs. The compiler checks for data races at compile time, making it easier to write safe and concurrent code without the risk of race conditions.</li>
+                <li>🚀 <strong>High Performance:</strong> Rust is designed for performance and can match the speed of C and C++ while providing memory safety. It achieves this through zero-cost abstractions, meaning you pay only for what you use.</li>
+                <li>🌟 <strong>Great Tooling and Community:</strong> 
+                    <ul>
+                        <li><strong>Cargo:</strong> Rust's build system and package manager make it easy to manage dependencies, run tests, and build projects.</li>
+                        <li><strong>Rustfmt:</strong> Ensures a consistent coding style by formatting your code automatically.</li>
+                        <li><strong>Clippy:</strong> A linting tool that provides helpful suggestions to improve your Rust code.</li>
+                        <li><strong>Documentation:</strong> Rust has extensive documentation and a friendly, active community that is always ready to help newcomers.</li>
+                    </ul>
+                </li>
+                <li>💡 <strong>Expressive Type System:</strong> Rust has a rich and expressive type system, including features like algebraic data types and pattern matching. These features enable developers to write more expressive and readable code.</li>
+                <li>🔧 <strong>Zero-cost Abstractions:</strong> Rust’s abstractions are designed to have zero runtime cost. This means you can use high-level constructs without worrying about their impact on performance.</li>
+                <li>🌐 <strong>Cross-platform Development:</strong> Rust can be used to write software that runs on various platforms, including embedded systems, desktop applications, and web applications using WebAssembly.</li>
+                <li>🕸️ <strong>WebAssembly:</strong> Rust is one of the most popular languages for WebAssembly. It allows you to compile Rust code to run in the browser, providing near-native performance for web applications.</li>
+                <li>🌍 <strong>Growing Ecosystem:</strong> The Rust ecosystem is rapidly growing, with a wide range of libraries and frameworks available for various domains, including web development (Rocket, Actix), game development (Amethyst), and more.</li>
+                <li>📝 <strong>Modern Syntax:</strong> Rust’s syntax is modern and intuitive, borrowing the best parts of other languages while avoiding their pitfalls. This makes it relatively easy to learn and use effectively.</li>
+                <li>🔒 <strong>Error Handling:</strong> Rust's error handling is robust and encourages the use of Result and Option types instead of exceptions. This leads to more predictable and maintainable code.</li>
+                <li>🏢 <strong>Adoption by Major Companies:</strong> Rust is being adopted by major companies for critical systems. For instance:
+                    <ul>
+                        <li><strong>Mozilla:</strong> Uses Rust for its Firefox browser engine (Servo).</li>
+                        <li><strong>Microsoft:</strong> Uses Rust for secure software components.</li>
+                        <li><strong>Dropbox:</strong> Uses Rust for performance-critical components.</li>
+                    </ul>
+                </li>
+                <li>📚 <strong>Community and Learning Resources:</strong> Rust has an incredibly supportive community and a plethora of learning resources, including:
+                    <ul>
+                        <li><strong>The Rust Book:</strong> A comprehensive guide to learning Rust, available for free.</li>
+                        <li><strong>Rustlings:</strong> Small exercises to get you used to reading and writing Rust code.</li>
+                        <li><strong>Rust by Example:</strong> A collection of runnable examples to help you understand Rust's syntax and concepts.</li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="rusty2.png" alt="Ferris the Crab" id="ferris">
+
+        </section>
+        <section id="example">
+            <h2>Example of Rust Code</h2>
+            <pre><code>fn main() {
+    let mut numbers = vec![1, 2, 3, 4, 5];
+
+    for number in &mut numbers {
+        *number *= 2;
+    }
+
+    println!("{:?}", numbers); // Output: [2, 4, 6, 8, 10]
+}</code></pre>
+        </section>
+        <section id="fizzbuzz">
+            <h2>FizzBuzz in Rust</h2>
+            <pre><code>fn main() {
+    for n in 1..=100 {
+        if n % 15 == 0 {
+            println!("FizzBuzz");
+        } else if n % 3 == 0 {
+            println!("Fizz");
+        } else if n % 5 == 0 {
+            println!("Buzz");
+        } else {
+            println!("{}", n);
+        }
+    }
+}</code></pre>
+        </section>
+        <button id="learn-more">Learn More</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rust Enthusiast</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
